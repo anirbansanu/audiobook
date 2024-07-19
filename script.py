@@ -35,7 +35,7 @@ class TextToSpeechConverter:
                     tts.save(chunk_file)
                     self.chunk_files.append(chunk_file)
                     pbar.update(len(chunk))
-                    print(f"Chunk {i} created: {chunk_file}")
+                    # print(f"Chunk {i} created: {chunk_file}")
 
     def concatenate_audio_files(self):
         combined = AudioSegment.empty()
